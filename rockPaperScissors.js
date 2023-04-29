@@ -23,7 +23,7 @@ function playRound(playerSelection, computerSelection) {
     }
   }
 
-  function game(){
+  function game(){ 
     let playerWins = 0; 
     let computerWins = 0;
     for (let i = 0; i < 5; i++) {
