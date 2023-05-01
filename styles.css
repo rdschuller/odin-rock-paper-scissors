@@ -3,7 +3,6 @@ body {
     flex-direction: column;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
-    gap: 40px;
     background-color: #AC3931;
     color: #E5D352;
 
@@ -12,6 +11,7 @@ body {
 .title {
     font-size: 36px;
     font-weight: 900;
+    margin-bottom: 60px;
 
 }
 
@@ -40,4 +40,35 @@ body {
 .character img {
     max-width: 100%;
     height: auto;
+}
+
+.character button.player-selected {
+    background: none;
+    border: solid #537D8D 8px;
+    padding: 0;
+}
+
+.character button.comp-selected {
+    background: none;
+    border: solid #482C3D 8px;
+    padding: 0;
+}
+
+.character button.draw {
+    border: 8px solid transparent;
+    background: linear-gradient(to right, #537D8D 50%, #482C3D 50%);
+    border-image-slice: 1;
+
+}
+
+/* results section */
+.result-box {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+}
+.comp-wins,
+.player-wins {
+    font-size: 20px;
 }
